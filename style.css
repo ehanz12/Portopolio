@@ -16,7 +16,7 @@ body {
 a {
     color: #6ca0f6;
     text-decoration: none;
-    transition: 0.3s;
+    transition: 0.5s all;
 }
 a:hover {
     text-decoration: underline;
@@ -290,32 +290,10 @@ section {
     backdrop-filter: blur(10px);
 }
 
-.project-item::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(
-        circle,
-        rgba(255, 255, 255, 0.1) 0%,
-        transparent 70%
-    );
-    transform: rotate(45deg);
-    transition: 0.5s;
-    opacity: 0;
-}
-
 .project-item:hover {
     transform: translateY(-10px);
     border-color: rgba(108, 160, 246, 0.4);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-}
-
-.project-item:hover::before {
-    opacity: 1;
-    transform: rotate(45deg) translate(50%, 50%);
 }
 
 .project-item h3 {
@@ -347,8 +325,8 @@ section {
 
 .project-link:hover {
     background: rgba(1, 254, 135, 0.2);
-    transform: translateX(5px);
     box-shadow: 0 5px 15px rgba(1, 254, 135, 0.2);
+    text-decoration: none;
 }
 
 /* Responsive Design */
