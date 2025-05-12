@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Login Section -->
+        <div class="header">
+            <h1>Welcome to Math Quiz</h1>
+            <p>Test your math skills!</p>
+        </div>
+        
+        <div class="content">
+            <div id="login-section">
+                <form class="login-form" id="loginForm">
+                    <div class="form-group">
+                        <label for="playerName">Enter Your Name:</label>
+                        <input type="text" id="playerName" placeholder="Your name">
+                    </div>
+                    <button type="submit" class="btn">Start Quiz</button>
+                </form>
+            </div>
+            
+            <!-- Quiz Section -->
+            <div id="quiz-section" class="quiz-section">
+                <div class="progress-text">
+                    Question <span id="current-question">1</span> of <span id="total-questions">5</span>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-bar" id="progress-bar"></div>
+                </div>
+                
+                <div class="question-container">
+                    <div id="question" class="question"></div>
+                    <div class="options" id="options"></div>
+                </div>
+            </div>
+            
+            <!-- Result Section -->
+            <div id="result-section" class="result-section">
+                <h2>Quiz Completed!</h2>
+                <div class="score-display">
+                    <span id="score">0</span>/<span id="max-score">5</span>
+                </div>
+                <p class="message">Great job, <span class="player-name" id="result-name">Player</span>!</p>
+                <div class="action-buttons">
+                    <button id="restart-btn" class="btn restart-btn">Play Again</button>
+                    <button id="exit-btn" class="btn exit-btn"><a href="/index.html" style="color: white; text-decoration:none;">Exit</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
