@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyReihan</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav aria-label="Primary navigation">
+                <div class="logo" tabindex="0">
+                    Myportoplio
+                </div>
+                <div class="hamburger" aria-label="Menu" role="button" tabindex="0">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#porject">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main class="container" tabindex="0">
+        <!-- about selection -->
+
+        <section id="about" class="about-me" aria-label="Aout Me Section">
+            <h1>😛Hallo Bro, Saya <strong>Reihan Aditya Putra</strong></h1>
+            <p>
+                Selamat datang di web portopolio saya! , saya adalah <strong>Murid SMK Plus Pelita Nusantara Bogor</strong> 
+                yang senang membuat aplikasi web, mendesain, dan mengamankannya, <strong>(Fullstack depevelopment & Cyber
+                Security)</strong> 
+            </p>
+            <p>
+                Saya pencaya bahwa teknologi adalah alat penting untuk membangun masa depan yang lebih baik, dan saya
+            </p>
+        </section>
+
+        <!-- skkills section -->
+         <section id="skills" aria-label="Skill Section">
+            <h2>💡 Skills</h2>
+            <div align="left">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo"  />
+                <img width="12" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="html5 logo"  />
+                <img width="12" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="40" alt="mysql logo"  />
+                <img width="12" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" height="40" alt="php logo"  />
+                <img width="12" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="40" alt="vscode logo"  />
+                <img width="12" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" height="40" alt="laravel logo"  />
+                <img width="12" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" height="40" alt="sqlite logo"  />
+                <img width="12" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="css3 logo"  />
+                <img width="12" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg" height="40" alt="tailwindcss logo"  />
+                <img width="12" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" height="40" alt="github logo"  />
+            </div>
+         </section>
+
+         <!-- Project Section -->
+
+         <section id="project" aria-label="Project Section">
+            <h2>🔔 Projects</h2>
+            <div class="project-list">
+                <article class="project-item" tabindex="0">
+                    <h3>💥 Website</h3>
+                    <p>
+                        Website pribadi yang menampilkan informasi pribadi, seperti profil, kontak, dan proyek-proyek yang telah saya kerjakan. dibangun dengan HTML, CSS, Dan Javascript.
+                    </p>
+                    <a href="#" class="project-link" target="_blank" rel="noopener">🔗 Lihat Project</a>
+                </article>
+                <article class="project-item" tabindex="0">
+                    <h3>📑 Todo List App</h3>
+                    <p>
+                        Aplikasi daftar tugas interaktif yang memungkinkan pengguna untuk membuat, mengelola, dan melacak tugas-tugas saya bisa menambahkan, menghapus, update, dan delete.
+                    </p>
+                    <a href="#" class="project-link" target="_blank" rel="noopener">🔗 Lihat Project</a>
+                </article>
+                <article class="project-item" tabindex="0">
+                    <h3>❓ Quiz Game</h3>
+                    <p>
+                        Membuat web quiz interaktif yang memungkinkan pengguna untuk menjawab pertanyaan dan mendapatkan skor mereka. Pertanyaan meliputi cyber security lalu website
+                    </p>
+                    <a href="#" class="project-link" target="_blank" rel="noopener">🔗 Lihat Project</a>
+                </article>
+                <article class="project-item" tabindex="0">
+                    <h3>🎮 Game TicTacToe</h3>
+                    <p>
+                        Web ini bisa untuk dimainkan seperti x, o, x dibuat dari react js
+                    </p>
+                    <a href="#" class="project-link" target="_blank" rel="noopener">🔗 Lihat Project</a>
+                </article>
+            </div>
+         </section>
+
+         <!-- Contact section -->
+          <section id="contact" aria-label="Contact Section">
+            <h2>🛂 Contact Me</h2>
+            <form action="" id="contact-form" novalidate onsubmit="return handleSubmit(event)">
+                <label for="name">Nama Lengkap</label>
+                <input type="text" id="name" name="name" placeholder="Nama anda" aria-label="Nama Anda" required>
+                <div class="error" id="name-error"></div>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email anda" aria-label="email Anda" required>
+                <div class="error" id="email-error"></div>
+
+                <label for="message">Pesan</label>
+                <textarea id="message" name="message" rows="4" placeholder="Tulis pesan anda" aria-label="Pesan Anda" required></textarea>
+                <div class="error" id="message-error"></div>
+
+                <button type="submit" aria-label="Kirim pesan">💬 Kirim Pesan</button>
+                <p class="success-msg" id="success-message" aria-live="polite"></p>
+            </form>
+          </section>
+    </main>
+
+    <footer>
+        &copy; 2025 Reihan Aditya Putra SMK PENUS
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
