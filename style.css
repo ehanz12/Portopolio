@@ -1,5 +1,6 @@
 *, html {
     scroll-behavior: smooth;
+    scroll-padding-top: 70px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -130,15 +131,66 @@ nav ul li a:hover {
     .hamburger.active span:nth-child(3) {
         transform: rotate(-45deg) translate(7px, -6px);
     }
+
+    .about-me h1 {
+        font-size: 30px;
+    }
 }
 
-/* Tambahan untuk smooth scroll */
-html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 70px;
+.about-me {
+ width: 100%;
+ height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
 
-/* Penyesuaian untuk konten utama */
+.about-me > h1 {
+ color: #fff;
+ font-size: 3em;
+ font-weight: 600;
+ padding: 0 100px;
+}
+
+.about-me > h1 > span {
+position: relative;
+color: rgba(255, 255, 255, 0.1);
+animation: DisplayText 9s infinite;
+animation-delay: calc(-3s *var(--i));
+}
+
+@keyframes DisplayText  {
+    0% {
+        display: inline-block;
+    }
+    33.33%, 100% {
+        display: none;
+    }
+}
+
+.about-me > h1 > span::before {
+ content: attr(data-text);
+ position: absolute;
+ left: 0;
+ top: 0;
+ width: 100%;
+ overflow: hidden;
+ color: #01fe87;
+ border-right: 4px solid #01fe87;
+ filter: drop-shadow(0 0 5px #01fe87) drop-shadow(0 0 25px #01fe87);
+ animation: animate 3s linear infinite;
+}
+
+@keyframes animate {
+    0%,10%,100% {
+        width: 0;
+    }
+    70%,90% {
+        width: 100%;
+    }
+}
+
+
 main {
     padding-top: 80px;
 }
@@ -162,10 +214,7 @@ p {
     color: #ccc;
 }
 
-.about-me p {
-    text-align: justify;
-    font-size: 1rem;
-}
+
 
 
 #skills div {
