@@ -24,6 +24,81 @@
         question: "7 + 8 = ?",
         options: ["12", "14", "15", "16"],
         correctAnswer: 2
+    },
+    {
+        question: "16 ÷ 4 =?",
+        options: ["2", "3", "4", "5"],
+        correctAnswer: 2
+    },
+    {
+        question: "2 × 5 =?",
+        options: ["10", "11", "12", "13"],
+        correctAnswer: 0
+    },
+    {
+        question: "1 windu = ?.. bulan ",
+        options: ["100", "90", "95", "96"],
+        correctAnswer: 3
+    },
+    {
+        question: "1 triwulan =?.. bulan ",
+        options: ["1", "4", "3", "5"],
+        correctAnswer: 2
+    },
+    {
+        question: "1 tahun =?.. bulan ",
+        options: ["12", "13", "14", "15"],
+        correctAnswer: 0
+    },
+    {
+        question: "1 rim = ... lembar",
+        options: ["400", "500", "120", "300"],
+        correctAnswer: 1
+    },
+    {
+        question: "125 x 8 =?..",
+        options: ["1000", "950", "990", "940"],
+        correctAnswer: 0
+    },
+    {
+        question: "1000 x 10 =?..",
+        options: ["10000", "10001", "10002", "10003"],
+        correctAnswer: 0
+    },
+    {
+        question: "1 minggu = ... detik",
+        options: ["604800", "604801", "604802", "604803"],
+        correctAnswer: 0
+    },
+    {
+        question: "1 jam =... detik",
+        options: ["3600", "3601", "3602", "3603"],
+        correctAnswer: 0
+    },
+    {
+        question: "1 hari =... detik",
+        options: ["86400", "86401", "86402", "86403"],
+        correctAnswer: 0
+    },
+    {
+        question: "1 tahun =... detik",
+        options: ["31536000", "31536001", "31536002", "31536003"],
+        correctAnswer: 0
+    },
+    {
+        question: "1 kg =... gram",
+        options: ["1000", "1001", "1002", "1003"],
+        correctAnswer: 0
+    },
+    {
+        question: "1 liter =... ml",
+        options: ["1000", "1001", "1002", "1003"],
+        correctAnswer: 0
+    },
+    {
+        question: "Pacar Reihan Aditya =...",
+        options: ["Alizaa", "diyas", "dinda", "dinda"],
+        correctAnswer: 0
     }
 ];
 
