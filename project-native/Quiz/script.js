@@ -96,8 +96,8 @@
         correctAnswer: 0
     },
     {
-        question: "Pacar Reihan Aditya =...",
-        options: ["Alizaa", "diyas", "dinda", "dinda"],
+        question: "45 : 3 =?..",
+        options: ["15", "16", "17", "18"],
         correctAnswer: 0
     }
 ];
