@@ -1,70 +1,3 @@
-/* About Page Styling */
-.about-page {
-    min-height: 100vh;
-    padding: 120px 20px 40px;
-    background: linear-gradient(135deg, rgba(30, 30, 47, 0.95), rgba(42, 42, 61, 0.95));
-}
-
-.about-section {
-    max-width: 1200px;
-    margin: 0 auto;
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 30px;
-    padding: 3rem;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-    position: relative;
-    overflow: hidden;
-}
-
-.about-section2 {
-    max-width: 1200px;
-    margin: 0 auto;
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 30px;
-    padding: 3rem;
-    margin-top: 3rem;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-    position: relative;
-    overflow: hidden;
-}
-
-.about-section2 h2 {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    font-size: 2.5rem;
-    color: #01fe87;
-}
-
-.parent {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    gap: 8px;
-}
-    
-
-
-.about-section::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(1, 254, 135, 0.1), transparent 70%);
-    animation: rotateGradient 15s linear infinite;
-}
-
-@keyframes rotateGradient {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
 
 .about-content {
     position: relative;
@@ -167,6 +100,7 @@
 .social-links {
     margin-top: 3rem;
     display: flex;
+    justify-content: center;
     gap: 2rem;
 }
 
@@ -213,10 +147,6 @@
 }
 
 @media screen and (max-width: 768px) {
-    .about-section {
-        padding: 2rem;
-    }
-
     .about-text h1 {
         font-size: 2.5rem;
     }
@@ -242,18 +172,8 @@ body {
 
 h1, h2, h3 {
     font-family: 'Space Grotesk', sans-serif;
-    letter-spacing: -0.5px;
+   
 }
-
-.about-text h1 {
-    font-size: 3.5rem;
-    font-weight: 700;
-    background: linear-gradient(45deg, #01fe87, #6ca0f6);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 2rem;
-}
-
 .about-text .intro {
     font-family: 'Space Grotesk', sans-serif;
     font-size: 2rem;
@@ -301,23 +221,7 @@ h1, h2, h3 {
         font-size: 1.2rem;
     }
 }
-.parent {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    gap: 8px;
-}
-    
-.div1 {
-    grid-column: span 3 / span 3;
-    grid-row: span 4 / span 4;
-}
 
-.div2 {
-    grid-column: span 2 / span 2;
-    grid-row: span 5 / span 5;
-    grid-column-start: 4;
-}
       
 
 footer {
@@ -326,4 +230,9 @@ footer {
     align-items: center;
     margin-top: 50px;
     color: white ;
+}
+
+strong {
+    color: #01fe87;
+    font-weight: 600;
 }
